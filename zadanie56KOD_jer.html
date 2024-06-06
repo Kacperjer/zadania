@@ -10,3 +10,27 @@ window.close()
 </script>
 </head>
 <body>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jereczek 3G_1</title>
+</head>
+<body>
+    <h1>Liczby pierwsze</h1>
+    <div id="result"></div>
+    <script>
+        let result = document.getElementById("result");
+        let primeNumbers = [];
+        for (let i_jer = 0; i_jer < 40; i_jer++) {
+            let w = i_jer * i_jer + i_jer + 41;
+            let isPrime = true;
+            if (isPrime) {
+                primeNumbers.push(`i_Aug = ${i_jer}, w(${i_jer}) = ${w}`);
+            }
+        }
+        result.innerHTML = primeNumbers.join("<br>");
+    </script>
+</body>
+</html>
