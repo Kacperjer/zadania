@@ -9,4 +9,44 @@ window.close()
 }
 </script>
 </head>
+<body><!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jereczek 3G_1</title>
+</head>
 <body>
+    <script>
+        var nazwisko = "Jereczek"; 
+        var imie = "Kacper"; 
+        var a = (nazwisko.length % 4) + 5;
+        var b = (imie.length % 6) + 20;
+
+        document.write("<pre>"); 
+        
+        for (var i = 0; i < b + 2; i++) {
+            document.write("*");
+        }
+        document.write("<br>");
+
+        
+        for (var i = 0; i < a; i++) {
+            document.write("*");
+            for (var j = 0; j < b; j++) {
+                document.write("&nbsp;");
+            }
+            document.write("*<br>");
+        }
+
+        
+        for (var i = 0; i < b + 2; i++) {
+            document.write("*");
+        }
+        document.write("<br>");
+        document.write("</pre>");
+    </script>
+</body>
+</html>
+</body>
+</html>
